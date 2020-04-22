@@ -11,3 +11,4 @@ rvm:
 script:
 - uname -a
 - ruby -v
+- ssh -vv git@github.com
