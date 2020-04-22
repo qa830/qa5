@@ -1,6 +1,6 @@
 dist: xenial
 # os: osx
-language: ruby
+language: minimal
 install: skip
 
 rvm:
