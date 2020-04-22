@@ -1,4 +1,5 @@
-dist: xenial
+#dist: xenial
+os: osx
 language: ruby
 install: skip
 
