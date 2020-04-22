@@ -3,9 +3,9 @@ dist: xenial
 language: minimal
 install: skip
 
-rvm:
-- 2.6.5
-- 2.6.6
+# rvm:
+# - 2.6.5
+# - 2.6.6
 # - 2.7.0
 # - 2.7.1
 
