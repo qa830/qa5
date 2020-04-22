@@ -1,5 +1,5 @@
-#dist: xenial
-os: osx
+dist: xenial
+# os: osx
 language: ruby
 install: skip
 
@@ -12,4 +12,4 @@ rvm:
 script:
 - uname -a
 - ruby -v
-- ssh -vv git@github.com
+# - ssh -vv git@github.com
