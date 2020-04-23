@@ -12,6 +12,6 @@ install: skip
 script:
 # - export TRAVIS_AGENT_DEBUG=true
 - uname -a
-- ruby -v
+# - ruby -v
 # - sleep 120
 # - ssh -vv git@github.com
