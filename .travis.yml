@@ -10,7 +10,7 @@ install: skip
 # - 2.7.1
 
 script:
-# - export TRAVIS_AGENT_DEBUG=true
+- export TRAVIS_AGENT_DEBUG=true
 - uname -a
 # - ruby -v
 # - sleep 120
