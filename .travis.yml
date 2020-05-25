@@ -27,8 +27,8 @@ script:
 - cat /etc/hosts
 - cat /etc/os-release
 # - dd if=/dev/zero of=file.txt count=1024 bs=30M
-# - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
-# - sleep 6000
+- __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
+- sleep 6000
 # - ruby -v
 
 # # dist: xenial
@@ -71,24 +71,24 @@ script:
 
 jobs:
   include:
-    - dist: xenial
-      language: ruby
-      name: Xenial-full
-    - dist: xenial
-      language: minimal
-      name: Xenial-minimal
-    - dist: xenial
-      language: generic
-      name: Xenial-generic
-    - dist: bionic
-      language: minimal
-      name: Bionic-minimal
-    - dist: bionic
-      language: generic
-      name: Bionic-generic
-    - dist: bionic
-      language: ruby
-      name: Bionic-full
+#     - dist: xenial
+#       language: ruby
+#       name: Xenial-full
+#     - dist: xenial
+#       language: minimal
+#       name: Xenial-minimal
+#     - dist: xenial
+#       language: generic
+#       name: Xenial-generic
+#     - dist: bionic
+#       language: minimal
+#       name: Bionic-minimal
+#     - dist: bionic
+#       language: generic
+#       name: Bionic-generic
+#     - dist: bionic
+#       language: ruby
+#       name: Bionic-full
     - dist: focal
       language: minimal
       name: Focal-minimal
