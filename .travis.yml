@@ -71,24 +71,24 @@ script:
 
 jobs:
   include:
-#     - dist: xenial
-#       language: ruby
-#       name: Xenial-full
-#     - dist: xenial
-#       language: minimal
-#       name: Xenial-minimal
-#     - dist: xenial
-#       language: generic
-#       name: Xenial-generic
-#     - dist: bionic
-#       language: minimal
-#       name: Bionic-minimal
-#     - dist: bionic
-#       language: generic
-#       name: Bionic-generic
-#     - dist: bionic
-#       language: ruby
-#       name: Bionic-full
+    - dist: xenial
+      language: ruby
+      name: Xenial-full
+    - dist: xenial
+      language: minimal
+      name: Xenial-minimal
+    - dist: xenial
+      language: generic
+      name: Xenial-generic
+    - dist: bionic
+      language: minimal
+      name: Bionic-minimal
+    - dist: bionic
+      language: generic
+      name: Bionic-generic
+    - dist: bionic
+      language: ruby
+      name: Bionic-full
     - dist: focal
       language: minimal
       name: Focal-minimal
