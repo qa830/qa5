@@ -7,7 +7,7 @@ dist: focal
 
 arch:
 - arm64
-- s390x
+# - s390x
 # - amd64
 # - ppc64le
 # - arm64-graviton2
