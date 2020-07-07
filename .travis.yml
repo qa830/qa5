@@ -1,12 +1,12 @@
 
-# dist: focal
+dist: focal
 # group: edge
-dist: xenial
+# dist: xenial
 # group: dev
 # cirt: lxd
 
 arch:
-# - arm64
+- arm64
 - s390x
 # - amd64
 # - ppc64le
