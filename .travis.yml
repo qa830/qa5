@@ -4,12 +4,18 @@
 # dist: xenial
 # group: dev
 # cirt: lxd
+language: java
 
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk8
+  
 arch:
-- arm64
+# - arm64
 # - s390x
 - amd64
-- ppc64le
+# - ppc64le
 # - arm64-graviton2
 
 # rvm:
@@ -23,13 +29,14 @@ arch:
 script:
 - uname -a
 - ruby -v
-- docker run hello-world
-- cat /etc/hosts
+#- docker run hello-world
+#- cat /etc/hosts
 - cat /etc/os-release
+- java -version
 # - cat /home/travis/.bash_aliases
 # - dd if=/dev/zero of=file.txt count=1024 bs=30M
 # - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
-- travis_wait 30 sleep 6000
+# - travis_wait 30 sleep 6000
 # - ruby -v
 
 # # dist: xenial
