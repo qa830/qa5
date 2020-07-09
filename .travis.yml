@@ -1,5 +1,5 @@
 
-dist: focal
+# dist: focal
 # group: edge
 # dist: xenial
 # group: dev
@@ -8,8 +8,8 @@ dist: focal
 arch:
 - arm64
 # - s390x
-# - amd64
-# - ppc64le
+- amd64
+- ppc64le
 # - arm64-graviton2
 
 # rvm:
@@ -29,7 +29,7 @@ script:
 # - cat /home/travis/.bash_aliases
 # - dd if=/dev/zero of=file.txt count=1024 bs=30M
 # - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
-# - sleep 6000
+- travis_wait 30 sleep 6000
 # - ruby -v
 
 # # dist: xenial
@@ -70,35 +70,35 @@ script:
 # # - 2.6.1
 # # - 2.6.0
 
-jobs:
-  include:
-    - dist: xenial
-      language: ruby
-      name: Xenial-full
-    - dist: xenial
-      language: minimal
-      name: Xenial-minimal
-    - dist: xenial
-      language: generic
-      name: Xenial-generic
-    - dist: bionic
-      language: minimal
-      name: Bionic-minimal
-    - dist: bionic
-      language: generic
-      name: Bionic-generic
-    - dist: bionic
-      language: ruby
-      name: Bionic-full
-    - dist: focal
-      language: minimal
-      name: Focal-minimal
-    - dist: focal
-      language: generic
-      name: Focal-generic
-    - dist: focal
-      language: ruby
-      name: Focal-full
+# jobs:
+#   include:
+#     - dist: xenial
+#       language: ruby
+#       name: Xenial-full
+#     - dist: xenial
+#       language: minimal
+#       name: Xenial-minimal
+#     - dist: xenial
+#       language: generic
+#       name: Xenial-generic
+#     - dist: bionic
+#       language: minimal
+#       name: Bionic-minimal
+#     - dist: bionic
+#       language: generic
+#       name: Bionic-generic
+#     - dist: bionic
+#       language: ruby
+#       name: Bionic-full
+#     - dist: focal
+#       language: minimal
+#       name: Focal-minimal
+#     - dist: focal
+#       language: generic
+#       name: Focal-generic
+#     - dist: focal
+#       language: ruby
+#       name: Focal-full
 #     - stage: php
 #       language: php
 #       script:
