@@ -1,18 +1,18 @@
 
-# dist: focal
+dist: focal
 # group: edge
 # dist: xenial
 # group: dev
 # cirt: lxd
-language: java
+# language: java
 
-jdk:
-  - oraclejdk8
-  - oraclejdk9
-  - openjdk8
+# jdk:
+#   - oraclejdk8
+#   - oraclejdk9
+#   - openjdk8
   
 arch:
-# - arm64
+- arm64
 # - s390x
 - amd64
 # - ppc64le
