@@ -1,10 +1,10 @@
 
-dist: focal
+# dist: focal
 # group: edge
-# dist: xenial
+dist: xenial
 # group: dev
 # cirt: lxd
-# language: java
+language: node_js
 
 # jdk:
 #   - oraclejdk8
