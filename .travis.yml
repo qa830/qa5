@@ -6,6 +6,11 @@ dist: xenial
 # cirt: lxd
 language: node_js
 
+node_js:
+  - 14
+  - 12
+  - 10
+  
 # jdk:
 #   - oraclejdk8
 #   - oraclejdk9
@@ -30,10 +35,10 @@ script:
 - uname -a
 - ruby -v
 #- docker run hello-world
-#- cat /etc/hosts
+- cat /etc/hosts
 - cat /etc/os-release
 - java -version
-# - cat /home/travis/.bash_aliases
+- cat /home/travis/.bash_aliases
 # - dd if=/dev/zero of=file.txt count=1024 bs=30M
 # - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
 # - travis_wait 30 sleep 6000
