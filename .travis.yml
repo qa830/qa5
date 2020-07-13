@@ -1,23 +1,26 @@
 
 # dist: focal
 # group: edge
-dist: xenial
+# dist: xenial
 # group: dev
 # cirt: lxd
-language: node_js
+# language: node_js
 
-node_js:
-  - 14
-  - 12
-  - 10
+# node_js:
+#   - 14
+#   - 12
+#   - 10
   
-# jdk:
-#   - oraclejdk8
-#   - oraclejdk9
-#   - openjdk8
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk8
+  - openjdk9
+  - openjdk10
+  - openjdk11
   
 arch:
-- arm64
+# - arm64
 # - s390x
 - amd64
 # - ppc64le
@@ -38,10 +41,10 @@ script:
 - cat /etc/hosts
 - cat /etc/os-release
 - java -version
-- cat /home/travis/.bash_aliases
-- sudo ls
-- cat /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-- cat /etc/cloud/cloud.cfg
+# - cat /home/travis/.bash_aliases
+# - sudo ls
+# - cat /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+# - cat /etc/cloud/cloud.cfg
 # - dd if=/dev/zero of=file.txt count=1024 bs=30M
 # - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
 # - travis_wait 30 sleep 6000
