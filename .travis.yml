@@ -5,6 +5,7 @@
 # group: dev
 # cirt: lxd
 # language: node_js
+language: java
 
 # node_js:
 #   - 14
