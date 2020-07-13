@@ -13,12 +13,14 @@ language: java
 #   - 10
   
 jdk:
-  - oraclejdk8
+#   - oraclejdk8
   - oraclejdk9
   - openjdk8
   - openjdk9
   - openjdk10
   - openjdk11
+  - openjdk15
+  - openjdk16
   
 arch:
 # - arm64
