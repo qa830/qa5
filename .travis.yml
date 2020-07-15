@@ -1,37 +1,37 @@
 
 # dist: focal
 # group: edge
-dist: bionic
+dist: xenial
 # group: dev
 # cirt: lxd
 # language: node_js
-language: java
+# language: java
 
 # node_js:
 #   - 14
 #   - 12
 #   - 10
   
-jdk:
-#   - oraclejdk8
-  - oraclejdk9
-  - openjdk8
-  - openjdk9
-  - openjdk10
-  - openjdk11
-  - openjdk15
-  - openjdk16
+# jdk:
+# #   - oraclejdk8
+#   - oraclejdk9
+#   - openjdk8
+#   - openjdk9
+#   - openjdk10
+#   - openjdk11
+#   - openjdk15
+#   - openjdk16
   
 arch:
 # - arm64
-# - s390x
+- s390x
 - amd64
 # - ppc64le
 # - arm64-graviton2
 
-# rvm:
-# - 2.7.1
-# - 2.7.0
+rvm:
+- 2.7.1
+- 2.7.0
 # - 2.6.6
 # - 2.6.5
 # - 2.6.4
@@ -43,7 +43,7 @@ script:
 #- docker run hello-world
 - cat /etc/hosts
 - cat /etc/os-release
-- java -version
+# - java -version
 # - cat /home/travis/.bash_aliases
 # - sudo ls
 # - cat /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
