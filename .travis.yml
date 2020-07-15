@@ -2,7 +2,7 @@
 # dist: focal
 # group: edge
 dist: xenial
-# group: dev
+group: dev
 # cirt: lxd
 # language: node_js
 # language: java
@@ -25,7 +25,7 @@ dist: xenial
 arch:
 # - arm64
 - s390x
-- amd64
+# - amd64
 # - ppc64le
 # - arm64-graviton2
 
