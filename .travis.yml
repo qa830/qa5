@@ -1,7 +1,7 @@
 
-# dist: focal
+dist: focal
 # group: edge
-dist: xenial
+# dist: xenial
 # group: dev
 # cirt: lxd
 # language: node_js
