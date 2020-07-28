@@ -1,7 +1,7 @@
 
 dist: xenial
 virt: lxd
-# group: edge
+group: edge
 # dist: xenial
 # group: dev
 # cirt: lxd
