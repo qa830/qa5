@@ -1,5 +1,6 @@
 
 dist: xenial
+virt: lxd
 # group: edge
 # dist: xenial
 # group: dev
@@ -23,10 +24,10 @@ dist: xenial
 #   - openjdk16
   
 arch:
-- arm64
+# - arm64
 # - s390x
 # - amd64
-- ppc64le
+# - ppc64le
 - arm64-graviton2
 
 rvm:
