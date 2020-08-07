@@ -55,7 +55,7 @@ script:
 # - ruby -v
 # - docker run hello-world
 - egrep -c '(vmx|svm)' /proc/cpuinfo
-- sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+- sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils cpu-checker
 - sudo adduser `id -un` libvirt
 - sudo adduser `id -un` kvm
 - virsh list --all
