@@ -1,5 +1,6 @@
 
-dist: bionic
+# dist: bionic
+dist: focal
 # virt: lxd
 # group: edge
 # dist: xenial
@@ -23,16 +24,16 @@ dist: bionic
 #   - openjdk15
 #   - openjdk16
   
-arch:
+# arch:
 # - arm64
 # - s390x
 # - amd64
-- ppc64le
+# - ppc64le
 # - arm64-graviton2
 
-rvm:
-- 2.7.1
-- 2.7.0
+# rvm:
+# - 2.7.1
+# - 2.7.0
 # - 2.6.6
 # - 2.6.5
 # - 2.6.4
@@ -51,13 +52,14 @@ script:
 # - cat /etc/cloud/cloud.cfg
 # - dd if=/dev/zero of=file.txt count=1024 bs=30M
 # - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
-- ruby -v
-- docker run hello-world
-# - egrep -c '(vmx|svm)' /proc/cpuinfo
-# - sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
-# - sudo adduser `id -un` libvirt
-# - sudo adduser `id -un` kvm
-# - virsh list --all
+# - ruby -v
+# - docker run hello-world
+- egrep -c '(vmx|svm)' /proc/cpuinfo
+- sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+- sudo adduser `id -un` libvirt
+- sudo adduser `id -un` kvm
+- virsh list --all
+- kvm-ok
 # - travis_wait 30 sleep 6000
 
 # # dist: xenial
