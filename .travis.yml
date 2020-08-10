@@ -1,9 +1,9 @@
 
 # dist: bionic
-dist: focal
+# dist: focal
 # virt: lxd
 # group: edge
-# dist: xenial
+dist: xenial
 # group: dev
 # cirt: lxd
 # language: node_js
