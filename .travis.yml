@@ -1,6 +1,6 @@
 
-# dist: bionic
-dist: focal
+dist: bionic
+# dist: focal
 # virt: lxd
 # group: edge
 # dist: xenial
