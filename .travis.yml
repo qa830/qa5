@@ -24,11 +24,11 @@ dist: xenial
 #   - openjdk15
 #   - openjdk16
   
-arch:
+# arch:
 # - arm64
 # - s390x
 # - amd64
-- ppc64le
+# - ppc64le
 # - arm64-graviton2
 
 rvm:
